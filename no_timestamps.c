@@ -44,7 +44,6 @@ int main(int argc, char * argv[]){
 
 	interval = (int)(interval * 1000000);
 	memcpy(&interval_g, &interval, sizeof(float)); 
-	interval_g -= 60.0;	
 	signal(SIGALRM, handler);
 	
 	ualarm(interval, 0);
